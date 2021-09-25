@@ -59,11 +59,30 @@ body{
     background-image: url(/image\ 45.png);
     padding: 1px;
     margin-top: 75px;
+    padding-bottom: 100px;
     background-size: cover;
+    position: relative;
+}
+
+.coursesection::before
+{
+    content :"";
+    height: 400px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: 100;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
 .course {
     display: flex;
+    gap: 80px;
+    padding: 0px 100px;
+    max-width: 1000px;
+    margin: 0 auto;
+    z-index: 200;
 }
 
 .CrsBg {
@@ -73,31 +92,44 @@ body{
 }
 
 .courses {
+    position: relative;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     color: #00388B;
+    z-index: 200;
 }
 
-.greenblock {
-    width: 25%;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 165px;
+.greenblock,
+.yellowblock,
+.blueblock  {
+    width: 100%;
+    padding-top: 50px;
     padding-bottom: 85px;
     background-color:  #D3F5E0;
     box-shadow: 0px 22px 26px -16px rgba(0, 0, 0, 0.16);
     border-radius: 18px;
+    z-index: 200;
 }
+
+.yellowblock {
+    background-color: #FBF5D1;
+}
+
+
+.blueblock {
+    background-color:  #D6ECF8;
+}
+
 
 .webDev{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-    margin-top: -90px;
+    /* margin-top: -90px; */
 }
 
 .Web{
@@ -106,7 +138,9 @@ body{
     margin-right: auto;
     color: #1E8758;
     font-size: 200%;
-    margin-top: 150px;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .webhr{
@@ -119,24 +153,13 @@ body{
     opacity: 0.5;
 }
 
-.blueblock {
-    width: 25%;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 165px;
-    padding-bottom: 85px;
-    background-color:  #D6ECF8;
-    box-shadow: 0px 22px 26px -16px rgba(0, 0, 0, 0.16);
-    border-radius: 18px;
-}
 
 .AI {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-    margin-top: -90px;
+    /* margin-top: -90px; */
 }
 
 .Aitxt {
@@ -145,27 +168,17 @@ body{
     margin-right: auto;
     color: #0064AD;
     font-size: 200%;
-    margin-top: 150px
+    padding: 100px 20px 0px;
 }
 
-.yellowblock {
-    width: 25%;
-    margin-top: 40px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 165px;
-    padding-bottom: 85px;
-    background-color: #FBF5D1;
-    box-shadow: 0px 22px 26px -16px rgba(0, 0, 0, 0.16);
-    border-radius: 18px;
-}
+
 
 .Andr{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-    margin-top: -90px; 
+    /* margin-top: -90px;  */
 }
 
 .AndDev {
@@ -174,6 +187,127 @@ body{
     margin-right: auto;
     color: #C28537;
     font-size: 200%;
-    margin-top: 150px
+    padding: 60px 20px 0px;
+}
+
+.bigTech {
+    margin: 40px 60px;
+}
+
+
+.learn {
+    font-size: 20px;
+    color: white;
+    background-color: #34BB8D;
+    padding: 15px 20px 40px;
+    border-radius: 18px 18px 0px 0px;
+}
+
+
+.google {
+    position: absolute;
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    max-width: max-content;
+    box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: white;
+    margin-top: -40px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cmpnsTxt {
+    font-size: 25px;
+    font-weight: bold;
+    color: #35BB8D;
+    background-color: #ebf8f4;
+    padding: 40px 20px 40px;
+    border-radius: 0px 0px 18px 18px;
+}
+
+.partnerCompanies {
+    background: linear-gradient(90.13deg, #EAF6FE 0.22%, #EFD9EE 100%);
+    position: relative;
+    z-index: 300;
+}
+
+.partnerCompanies ::after {
+    content :"";
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 231px;
+    height: 400px;
+    left: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: 100;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+}
+
+.placed {
+    padding-top: 30px;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #00388B;
+    letter-spacing: -0.03em;
+}
+
+.CompaniesLogo {
+    z-index: 300;
+    position: relative;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CompaniesLogo div {
+    background-color: white;
+    background-color: white;
+    padding: 20px;
+    border: 0.456003px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 9.12006px;
+    width: 100%;
+    height: 100%;
+}
+
+.cmpny {
+    position: relative;
+    z-index: 300;
+    margin: auto;
+    display: block;
+    height: 100%;
+}
+
+.manymore {
+    position: relative;
+    z-index: 300;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #00388B;
+    padding-bottom: 60px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
