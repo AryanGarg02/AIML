@@ -7,8 +7,8 @@ body{
 .mainHeading {
     text-align: center;
     font-weight: bold;
-    font-size: 31px;
-    line-height: 34px;
+    font-size: 50px;
+    line-height: 45px;
     margin-left: auto;
     margin-right: auto;
     letter-spacing: -0.03em;
@@ -40,13 +40,12 @@ body{
     font-family: Inter, sans-serif;
     font-style: normal;
     font-size: 40px;
-    color: #00388B;  
+    color: #00388B; 
 }
 
 .internblock {
     background-color: white;
-    width: 80%;
-    margin-top: 22px;
+    max-width: 1000px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -58,7 +57,7 @@ body{
 .coursesection {
     background-image: url(/image\ 45.png);
     padding: 1px;
-    margin-top: 75px;
+    margin-top: 100px;
     padding-bottom: 100px;
     background-size: cover;
     position: relative;
@@ -192,7 +191,12 @@ body{
 }
 
 .bigTech {
-    margin: 40px 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -250,6 +254,7 @@ body{
 }
 
 .placed {
+    max-width: 800px;
     padding-top: 30px;
     font-weight: 600;
     font-size: 50px;
@@ -307,8 +312,75 @@ body{
 }
 
 .steps {
+    background-color: #f5fbff;
+    border-radius: 0px 0px 18px 18px;
     display: grid;
+    gap: 100px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    padding: 60px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.whatyouget {
+    background-color: #ebf6fe;
+    max-width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 18px;
+}
+
+.youget {
+    text-align: center;
+    color: #00388B;
+    padding-top: 30px;
+}
+
+.trainingbadge,
+.suitcase,
+.certificate,
+.doubtsession {
+    transform: scale(1.2);
+}
+
+.fourblocks1,
+.fourblocks2,
+.fourblocks3,
+.fourblocks4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cartoon {
+    position: relative;
+    background: linear-gradient(270deg, #C5D1AD 0%, #DFE3D0 73.95%);
+}
+
+.cost {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    background-color: #34bb8d;
+    color: white;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.Registration {
+    margin-left: 20px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    border: #FFFFFF;
+    transform: scale(1.2);
+    padding: 10px;
+    color: #34bb8d;
+}
+
+.Registration:hover {
+    box-shadow: 0 0 7px black;
+}
