@@ -19,7 +19,7 @@ body{
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     padding: 1px;
-    height: 500px;
+    height: 525px;
     background: linear-gradient(90deg, #647CA6 0%, #7086B0 49.96%, #5F77A3 100%);
     z-index: 100;
     position: relative;
@@ -57,7 +57,7 @@ body{
 .coursesection {
     background-image: url(/image\ 45.png);
     padding: 1px;
-    margin-top: 100px;
+    margin-top: 90px;
     padding-bottom: 100px;
     background-size: cover;
     position: relative;
@@ -94,7 +94,7 @@ body{
 .courses {
     position: relative;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 70px;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -128,8 +128,8 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
-    /* margin-top: -90px; */
+    width: 65%;
+    padding-top: 40px;
 }
 
 .Web{
@@ -138,19 +138,20 @@ body{
     margin-right: auto;
     color: #1E8758;
     font-size: 200%;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 10px;
 }
 
 .webhr{
-    width:25%;
+    width:20%;
     height: 4px;
     border-radius: 30px;
-    margin-top: 60px;
-    margin-bottom: -20px;
     border: none;
-    opacity: 0.5;
+    opacity: 0.4;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 
@@ -158,8 +159,8 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
-    /* margin-top: -90px; */
+    width: 55%;
+    padding-top: 40px;
 }
 
 .Aitxt {
@@ -168,7 +169,8 @@ body{
     margin-right: auto;
     color: #0064AD;
     font-size: 200%;
-    padding: 100px 20px 0px;
+    padding: 75px 20px 0px;
+    margin-bottom: 10px;
 }
 
 
@@ -177,8 +179,8 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
-    /* margin-top: -90px;  */
+    width: 54%;
+    padding-top: 40px;
 }
 
 .AndDev {
@@ -187,7 +189,8 @@ body{
     margin-right: auto;
     color: #C28537;
     font-size: 200%;
-    padding: 60px 20px 0px;
+    padding: 34px 20px 0px;
+    margin-bottom: 10px;
 }
 
 .bigTech {
@@ -204,7 +207,7 @@ body{
     font-size: 20px;
     color: white;
     background-color: #34BB8D;
-    padding: 15px 20px 40px;
+    padding: 15px 40px 40px;
     border-radius: 18px 18px 0px 0px;
 }
 
@@ -230,7 +233,7 @@ body{
     font-weight: bold;
     color: #35BB8D;
     background-color: #ebf8f4;
-    padding: 40px 20px 40px;
+    padding: 60px 40px 20px;
     border-radius: 0px 0px 18px 18px;
 }
 
@@ -346,29 +349,43 @@ body{
     transform: scale(1.2);
 }
 
-.fourblocks1,
-.fourblocks2,
-.fourblocks3,
-.fourblocks4 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.lastBlock {
+    margin-top: 40px;
+    background: linear-gradient(270deg, #C5D1AD 0%, #DFE3D0 73.95%);
+    height: 400px;
+    position: relative;
 }
 
 .cartoon {
-    position: relative;
-    background: linear-gradient(270deg, #C5D1AD 0%, #DFE3D0 73.95%);
+    position: absolute;
+    padding-left: 100px;
+    padding-top: 100px;
+    z-index: 200;
+}
+
+.subBlock{
+    margin-left: 480px;
+    margin-top: 150px;
+    position: absolute;
+    z-index: 100;
 }
 
 .cost {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 400px;
+    max-width: 500px;
     background-color: #34bb8d;
     color: white;
-    padding: 20px;
+    padding: 20px 50px 40px;
     border-radius: 18px;
+}
+
+.lasttxt {
+    max-width: 500px;
+    font-size: 20px;
+    color: #48AA7B;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+
 }
 
 .Registration {
@@ -377,10 +394,19 @@ body{
     border-radius: 50px;
     border: #FFFFFF;
     transform: scale(1.2);
-    padding: 10px;
+    padding: 10px 20px;
     color: #34bb8d;
 }
 
 .Registration:hover {
     box-shadow: 0 0 7px black;
+}
+
+.credits{
+    position: absolute;
+    margin-top: 790px;
+    width: 100%;
+    height: 60px;
+    background-color: #34BB8D ;
+    margin-bottom: 0px;
 }
