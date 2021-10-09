@@ -429,9 +429,9 @@ body{
     margin-bottom: 0px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 1024px){
     .header {
-        height: 440px;
+        height: 415px;
     }
     .mainHeading {
         font-size: 35px;
@@ -443,7 +443,7 @@ body{
         height: 280px;
     }
     .internblock{
-        max-width: 380px;
+        max-width: 80%;
         padding: 10px 0px;
     }
     .internship {
@@ -456,15 +456,18 @@ body{
     }
 
     .coursesection {
-        margin-top: 80px;
+        margin-top: 75px;
     }
 
     .greenblock,
     .blueblock,
     .yellowblock {
+        max-width: 240px;
         font-size: 10px;
         padding-top: 20px;
         padding-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .AI {
         width: 90px;
@@ -503,12 +506,12 @@ body{
     }
 
     .learn {
-        font-size: 20px;
+        font-size: 25px;
         padding: 10px 30px 30px;
     }
 
     .cmpnsTxt {
-        font-size: 20px;
+        font-size: 25px;
         padding: 20px 30px 20px;
     }
 
@@ -557,11 +560,11 @@ body{
 
     .SubLastblock {
         margin-top: -230px;
-        margin-left: -10px;
+        margin-left: -35px;
     }
 
     .nextGen {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .cost {
